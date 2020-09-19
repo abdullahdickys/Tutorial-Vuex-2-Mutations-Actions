@@ -14,7 +14,11 @@
                     <input type="text" v-model="agenda.kegiatan" class="form-control" required>
                 </div>
                 <div class="form-group">
+<<<<<<< HEAD
                     <button class="btn btn-danger btn-sm" :disabled="isLoading" @click.prevent="simpan">{{ isLoading ? 'Loading...':'Tambahkan' }}</button>
+=======
+                    <button class="btn btn-danger btn-sm" @click.prevent="simpan">Tambahkan</button>
+>>>>>>> 0024d994b7487b724d40625a738df9156c785843
                 </div>
             </div>
         </div>
@@ -31,6 +35,7 @@
                 }
             }
         },
+<<<<<<< HEAD
 	computed: {
 		isLoading() {
 		return this.$store.state.isLoading
@@ -43,6 +48,15 @@
 		hari: '',
 		kegiatan: ''
 		}
+=======
+        methods: {
+            simpan() {
+		this.$store.dispatch('simpanAgenda', this.agenda)
+	        this.agenda = {
+        	hari: '',
+        	kegiatan: ''
+    		}
+>>>>>>> 0024d994b7487b724d40625a738df9156c785843
             }
         }
     }
