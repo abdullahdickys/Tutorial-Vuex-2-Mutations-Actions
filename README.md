@@ -24,3 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # Tutorial-Vuex-2-Mutations-Actions
 # Tutorial-Vuex-3-Module-Helpers
+# Tutorial-Vuex-3-Module-Helpers
